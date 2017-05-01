@@ -127,4 +127,14 @@ public class MainActivity extends AppCompatActivity {
             }
         }
     }
+
+    public void startVoice(View v) {
+        Intent intent = new Intent(this, VoiceRecognitionActivity.class);
+        //EditText editText = (EditText) findViewById(R.id.editText);
+        //String message = editText.getText().toString();
+        //intent.putExtra(EXTRA_MESSAGE, message);
+        startActivity(intent);
+
+        //Toast.makeText(MainActivity.this,"Start Voice Clicked", Toast.LENGTH_SHORT).show();
+    }
 }
